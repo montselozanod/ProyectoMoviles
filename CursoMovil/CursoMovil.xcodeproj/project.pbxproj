@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B012B6D118E482CB00CBC901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6D018E482CB00CBC901 /* Foundation.framework */; };
+		B012B6D318E482CB00CBC901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6D218E482CB00CBC901 /* CoreGraphics.framework */; };
+		B012B6D518E482CB00CBC901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6D418E482CB00CBC901 /* UIKit.framework */; };
+		B012B6D718E482CB00CBC901 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6D618E482CB00CBC901 /* CoreData.framework */; };
+		B012B6DD18E482CB00CBC901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B012B6DB18E482CB00CBC901 /* InfoPlist.strings */; };
+		B012B6DF18E482CB00CBC901 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B012B6DE18E482CB00CBC901 /* main.m */; };
+		B012B6E318E482CB00CBC901 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B012B6E218E482CB00CBC901 /* AppDelegate.m */; };
+		B012B6E618E482CB00CBC901 /* CursoMovil.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B012B6E418E482CB00CBC901 /* CursoMovil.xcdatamodeld */; };
+		B012B6E818E482CB00CBC901 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B012B6E718E482CB00CBC901 /* Images.xcassets */; };
+		B012B6EF18E482CB00CBC901 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6EE18E482CB00CBC901 /* XCTest.framework */; };
+		B012B6F018E482CB00CBC901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6D018E482CB00CBC901 /* Foundation.framework */; };
+		B012B6F118E482CB00CBC901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6D418E482CB00CBC901 /* UIKit.framework */; };
+		B012B6F218E482CB00CBC901 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B6D618E482CB00CBC901 /* CoreData.framework */; };
+		B012B6FA18E482CB00CBC901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B012B6F818E482CB00CBC901 /* InfoPlist.strings */; };
+		B012B6FC18E482CB00CBC901 /* CursoMovilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B012B6FB18E482CB00CBC901 /* CursoMovilTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B012B6F318E482CB00CBC901 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B012B6C518E482CA00CBC901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B012B6CC18E482CA00CBC901;
+			remoteInfo = CursoMovil;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B012B6CD18E482CB00CBC901 /* CursoMovil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoMovil.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B012B6D018E482CB00CBC901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B012B6D218E482CB00CBC901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B012B6D418E482CB00CBC901 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B012B6D618E482CB00CBC901 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B012B6DA18E482CB00CBC901 /* CursoMovil-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CursoMovil-Info.plist"; sourceTree = "<group>"; };
+		B012B6DC18E482CB00CBC901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B012B6DE18E482CB00CBC901 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B012B6E018E482CB00CBC901 /* CursoMovil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CursoMovil-Prefix.pch"; sourceTree = "<group>"; };
+		B012B6E118E482CB00CBC901 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B012B6E218E482CB00CBC901 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B012B6E518E482CB00CBC901 /* CursoMovil.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CursoMovil.xcdatamodel; sourceTree = "<group>"; };
+		B012B6E718E482CB00CBC901 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B012B6ED18E482CB00CBC901 /* CursoMovilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CursoMovilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B012B6EE18E482CB00CBC901 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B012B6F718E482CB00CBC901 /* CursoMovilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CursoMovilTests-Info.plist"; sourceTree = "<group>"; };
+		B012B6F918E482CB00CBC901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B012B6FB18E482CB00CBC901 /* CursoMovilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CursoMovilTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B012B6CA18E482CA00CBC901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012B6D318E482CB00CBC901 /* CoreGraphics.framework in Frameworks */,
+				B012B6D718E482CB00CBC901 /* CoreData.framework in Frameworks */,
+				B012B6D518E482CB00CBC901 /* UIKit.framework in Frameworks */,
+				B012B6D118E482CB00CBC901 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B012B6EA18E482CB00CBC901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012B6EF18E482CB00CBC901 /* XCTest.framework in Frameworks */,
+				B012B6F218E482CB00CBC901 /* CoreData.framework in Frameworks */,
+				B012B6F118E482CB00CBC901 /* UIKit.framework in Frameworks */,
+				B012B6F018E482CB00CBC901 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B012B6C418E482CA00CBC901 = {
+			isa = PBXGroup;
+			children = (
+				B012B6D818E482CB00CBC901 /* CursoMovil */,
+				B012B6F518E482CB00CBC901 /* CursoMovilTests */,
+				B012B6CF18E482CB00CBC901 /* Frameworks */,
+				B012B6CE18E482CB00CBC901 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B012B6CE18E482CB00CBC901 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B012B6CD18E482CB00CBC901 /* CursoMovil.app */,
+				B012B6ED18E482CB00CBC901 /* CursoMovilTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B012B6CF18E482CB00CBC901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B012B6D018E482CB00CBC901 /* Foundation.framework */,
+				B012B6D218E482CB00CBC901 /* CoreGraphics.framework */,
+				B012B6D418E482CB00CBC901 /* UIKit.framework */,
+				B012B6D618E482CB00CBC901 /* CoreData.framework */,
+				B012B6EE18E482CB00CBC901 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B012B6D818E482CB00CBC901 /* CursoMovil */ = {
+			isa = PBXGroup;
+			children = (
+				B012B6E118E482CB00CBC901 /* AppDelegate.h */,
+				B012B6E218E482CB00CBC901 /* AppDelegate.m */,
+				B012B6E718E482CB00CBC901 /* Images.xcassets */,
+				B012B6E418E482CB00CBC901 /* CursoMovil.xcdatamodeld */,
+				B012B6D918E482CB00CBC901 /* Supporting Files */,
+			);
+			path = CursoMovil;
+			sourceTree = "<group>";
+		};
+		B012B6D918E482CB00CBC901 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B012B6DA18E482CB00CBC901 /* CursoMovil-Info.plist */,
+				B012B6DB18E482CB00CBC901 /* InfoPlist.strings */,
+				B012B6DE18E482CB00CBC901 /* main.m */,
+				B012B6E018E482CB00CBC901 /* CursoMovil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B012B6F518E482CB00CBC901 /* CursoMovilTests */ = {
+			isa = PBXGroup;
+			children = (
+				B012B6FB18E482CB00CBC901 /* CursoMovilTests.m */,
+				B012B6F618E482CB00CBC901 /* Supporting Files */,
+			);
+			path = CursoMovilTests;
+			sourceTree = "<group>";
+		};
+		B012B6F618E482CB00CBC901 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B012B6F718E482CB00CBC901 /* CursoMovilTests-Info.plist */,
+				B012B6F818E482CB00CBC901 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B012B6CC18E482CA00CBC901 /* CursoMovil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B012B6FF18E482CB00CBC901 /* Build configuration list for PBXNativeTarget "CursoMovil" */;
+			buildPhases = (
+				B012B6C918E482CA00CBC901 /* Sources */,
+				B012B6CA18E482CA00CBC901 /* Frameworks */,
+				B012B6CB18E482CA00CBC901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CursoMovil;
+			productName = CursoMovil;
+			productReference = B012B6CD18E482CB00CBC901 /* CursoMovil.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B012B6EC18E482CB00CBC901 /* CursoMovilTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B012B70218E482CB00CBC901 /* Build configuration list for PBXNativeTarget "CursoMovilTests" */;
+			buildPhases = (
+				B012B6E918E482CB00CBC901 /* Sources */,
+				B012B6EA18E482CB00CBC901 /* Frameworks */,
+				B012B6EB18E482CB00CBC901 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B012B6F418E482CB00CBC901 /* PBXTargetDependency */,
+			);
+			name = CursoMovilTests;
+			productName = CursoMovilTests;
+			productReference = B012B6ED18E482CB00CBC901 /* CursoMovilTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B012B6C518E482CA00CBC901 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = ITESM;
+				TargetAttributes = {
+					B012B6EC18E482CB00CBC901 = {
+						TestTargetID = B012B6CC18E482CA00CBC901;
+					};
+				};
+			};
+			buildConfigurationList = B012B6C818E482CA00CBC901 /* Build configuration list for PBXProject "CursoMovil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B012B6C418E482CA00CBC901;
+			productRefGroup = B012B6CE18E482CB00CBC901 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B012B6CC18E482CA00CBC901 /* CursoMovil */,
+				B012B6EC18E482CB00CBC901 /* CursoMovilTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B012B6CB18E482CA00CBC901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012B6DD18E482CB00CBC901 /* InfoPlist.strings in Resources */,
+				B012B6E818E482CB00CBC901 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B012B6EB18E482CB00CBC901 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012B6FA18E482CB00CBC901 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B012B6C918E482CA00CBC901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012B6E618E482CB00CBC901 /* CursoMovil.xcdatamodeld in Sources */,
+				B012B6E318E482CB00CBC901 /* AppDelegate.m in Sources */,
+				B012B6DF18E482CB00CBC901 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B012B6E918E482CB00CBC901 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B012B6FC18E482CB00CBC901 /* CursoMovilTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B012B6F418E482CB00CBC901 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B012B6CC18E482CA00CBC901 /* CursoMovil */;
+			targetProxy = B012B6F318E482CB00CBC901 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B012B6DB18E482CB00CBC901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B012B6DC18E482CB00CBC901 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B012B6F818E482CB00CBC901 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B012B6F918E482CB00CBC901 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B012B6FD18E482CB00CBC901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B012B6FE18E482CB00CBC901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B012B70018E482CB00CBC901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CursoMovil/CursoMovil-Prefix.pch";
+				INFOPLIST_FILE = "CursoMovil/CursoMovil-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B012B70118E482CB00CBC901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CursoMovil/CursoMovil-Prefix.pch";
+				INFOPLIST_FILE = "CursoMovil/CursoMovil-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B012B70318E482CB00CBC901 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CursoMovil.app/CursoMovil";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CursoMovil/CursoMovil-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CursoMovilTests/CursoMovilTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B012B70418E482CB00CBC901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CursoMovil.app/CursoMovil";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CursoMovil/CursoMovil-Prefix.pch";
+				INFOPLIST_FILE = "CursoMovilTests/CursoMovilTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B012B6C818E482CA00CBC901 /* Build configuration list for PBXProject "CursoMovil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B012B6FD18E482CB00CBC901 /* Debug */,
+				B012B6FE18E482CB00CBC901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B012B6FF18E482CB00CBC901 /* Build configuration list for PBXNativeTarget "CursoMovil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B012B70018E482CB00CBC901 /* Debug */,
+				B012B70118E482CB00CBC901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B012B70218E482CB00CBC901 /* Build configuration list for PBXNativeTarget "CursoMovilTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B012B70318E482CB00CBC901 /* Debug */,
+				B012B70418E482CB00CBC901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B012B6E418E482CB00CBC901 /* CursoMovil.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B012B6E518E482CB00CBC901 /* CursoMovil.xcdatamodel */,
+			);
+			currentVersion = B012B6E518E482CB00CBC901 /* CursoMovil.xcdatamodel */;
+			path = CursoMovil.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = B012B6C518E482CA00CBC901 /* Project object */;
+}
