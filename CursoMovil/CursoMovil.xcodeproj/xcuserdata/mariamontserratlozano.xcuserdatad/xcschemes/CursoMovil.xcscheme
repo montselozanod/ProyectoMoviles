@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B012B6CC18E482CA00CBC901"
+               BlueprintIdentifier = "B012B70D18E483B400CBC901"
                BuildableName = "CursoMovil.app"
                BlueprintName = "CursoMovil"
                ReferencedContainer = "container:CursoMovil.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B012B6EC18E482CB00CBC901"
+               BlueprintIdentifier = "B012B72D18E483B500CBC901"
                BuildableName = "CursoMovilTests.xctest"
                BlueprintName = "CursoMovilTests"
                ReferencedContainer = "container:CursoMovil.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B012B6CC18E482CA00CBC901"
+            BlueprintIdentifier = "B012B70D18E483B400CBC901"
             BuildableName = "CursoMovil.app"
             BlueprintName = "CursoMovil"
             ReferencedContainer = "container:CursoMovil.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B012B6CC18E482CA00CBC901"
+            BlueprintIdentifier = "B012B70D18E483B400CBC901"
             BuildableName = "CursoMovil.app"
             BlueprintName = "CursoMovil"
             ReferencedContainer = "container:CursoMovil.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B012B6CC18E482CA00CBC901"
+            BlueprintIdentifier = "B012B70D18E483B400CBC901"
             BuildableName = "CursoMovil.app"
             BlueprintName = "CursoMovil"
             ReferencedContainer = "container:CursoMovil.xcodeproj">
