@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="-212" y="-458"/>
         </scene>
-        <!--View Controller - Cuidado del Agua-->
+        <!--View Controller - Energías Renovables-->
         <scene sceneID="xDf-2C-jof">
             <objects>
                 <viewController id="ljK-Mh-rc0" sceneMemberID="viewController">
@@ -77,13 +77,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cuidado del Agua" id="Khm-uR-BLz"/>
+                    <navigationItem key="navigationItem" title="Energías Renovables" id="Khm-uR-BLz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s45-kr-u1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-275" y="1123"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Biodiversidad-->
         <scene sceneID="zdK-AO-lU4">
             <objects>
                 <viewController id="tGg-Xs-xXA" sceneMemberID="viewController">
@@ -96,13 +96,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Rj3-qF-Ag7"/>
+                    <navigationItem key="navigationItem" title="Biodiversidad" id="Rj3-qF-Ag7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UY4-LW-Iqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325" y="1123"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Reciclaje-->
         <scene sceneID="JG5-z6-X1I">
             <objects>
                 <viewController id="PLS-Za-Oo6" sceneMemberID="viewController">
@@ -115,13 +115,13 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TA6-Bu-4Ud"/>
+                    <navigationItem key="navigationItem" title="Reciclaje" id="TA6-Bu-4Ud"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A8T-fK-DnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042" y="1115"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Agua-->
         <scene sceneID="IPS-Ju-p2g">
             <objects>
                 <viewController id="Fhe-tV-2oh" sceneMemberID="viewController">
@@ -134,7 +134,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mVP-3L-Rqf"/>
+                    <navigationItem key="navigationItem" title="Agua" id="mVP-3L-Rqf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uEG-Km-FZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
