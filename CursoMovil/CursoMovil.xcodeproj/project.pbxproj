@@ -35,6 +35,7 @@
 		B012B75E18E52DD400CBC901 /* m-12.png in Resources */ = {isa = PBXBuildFile; fileRef = B012B75318E52DD400CBC901 /* m-12.png */; };
 		B012B75F18E52DD400CBC901 /* m-13.png in Resources */ = {isa = PBXBuildFile; fileRef = B012B75418E52DD400CBC901 /* m-13.png */; };
 		B012B76218E5352E00CBC901 /* m-07.png in Resources */ = {isa = PBXBuildFile; fileRef = B012B76118E5352E00CBC901 /* m-07.png */; };
+		B07852B118E5EC7B0012CB76 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = B07852B018E5EC7B0012CB76 /* blue.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		B012B75318E52DD400CBC901 /* m-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-12.png"; sourceTree = "<group>"; };
 		B012B75418E52DD400CBC901 /* m-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-13.png"; sourceTree = "<group>"; };
 		B012B76118E5352E00CBC901 /* m-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-07.png"; sourceTree = "<group>"; };
+		B07852B018E5EC7B0012CB76 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 		B012B71918E483B400CBC901 /* CursoMovil */ = {
 			isa = PBXGroup;
 			children = (
+				B07852B018E5EC7B0012CB76 /* blue.png */,
 				B012B76018E52DDE00CBC901 /* Imagenes */,
 				B012B74818E520FF00CBC901 /* Main.storyboard */,
 				B012B72218E483B400CBC901 /* AppDelegate.h */,
@@ -278,6 +281,7 @@
 				B012B75E18E52DD400CBC901 /* m-12.png in Resources */,
 				B012B71E18E483B400CBC901 /* InfoPlist.strings in Resources */,
 				B012B75618E52DD400CBC901 /* m-03.png in Resources */,
+				B07852B118E5EC7B0012CB76 /* blue.png in Resources */,
 				B012B75A18E52DD400CBC901 /* m-08.png in Resources */,
 				B012B72918E483B400CBC901 /* Images.xcassets in Resources */,
 				B012B75C18E52DD400CBC901 /* m-10.png in Resources */,
