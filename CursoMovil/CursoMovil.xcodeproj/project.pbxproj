@@ -22,7 +22,7 @@
 		B012B73318E483B500CBC901 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B71718E483B400CBC901 /* CoreData.framework */; };
 		B012B73B18E483B500CBC901 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B012B73918E483B500CBC901 /* InfoPlist.strings */; };
 		B012B73D18E483B500CBC901 /* CursoMovilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B012B73C18E483B500CBC901 /* CursoMovilTests.m */; };
-		B012B74718E4843C00CBC901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B012B74618E4843C00CBC901 /* Main.storyboard */; };
+		B012B74918E520FF00CBC901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B012B74818E520FF00CBC901 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		B012B73818E483B500CBC901 /* CursoMovilTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CursoMovilTests-Info.plist"; sourceTree = "<group>"; };
 		B012B73A18E483B500CBC901 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B012B73C18E483B500CBC901 /* CursoMovilTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CursoMovilTests.m; sourceTree = "<group>"; };
-		B012B74618E4843C00CBC901 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		B012B74818E520FF00CBC901 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +117,12 @@
 		B012B71918E483B400CBC901 /* CursoMovil */ = {
 			isa = PBXGroup;
 			children = (
+				B012B74818E520FF00CBC901 /* Main.storyboard */,
 				B012B72218E483B400CBC901 /* AppDelegate.h */,
 				B012B72318E483B400CBC901 /* AppDelegate.m */,
 				B012B72818E483B400CBC901 /* Images.xcassets */,
 				B012B72518E483B400CBC901 /* CursoMovil.xcdatamodeld */,
 				B012B71A18E483B400CBC901 /* Supporting Files */,
-				B012B74618E4843C00CBC901 /* Main.storyboard */,
 			);
 			path = CursoMovil;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 			files = (
 				B012B71E18E483B400CBC901 /* InfoPlist.strings in Resources */,
 				B012B72918E483B400CBC901 /* Images.xcassets in Resources */,
-				B012B74718E4843C00CBC901 /* Main.storyboard in Resources */,
+				B012B74918E520FF00CBC901 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +453,7 @@
 				B012B74218E483B500CBC901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B012B74318E483B500CBC901 /* Build configuration list for PBXNativeTarget "CursoMovilTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +462,7 @@
 				B012B74518E483B500CBC901 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
