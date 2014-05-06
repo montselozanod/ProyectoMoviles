@@ -1,19 +1,46 @@
 //
-//  ActividadesViewController.m
-//  CursoMovil
+//APRENDIZAJE VERDE - CUIDANDO EL AMBIENTE
+//Mobile Development Course Project
 //
-//  Created by Eliézer Galván on 3/28/14.
-//  Copyright (c) 2014 ITESM. All rights reserved.
+//Copyright (C) 2014 - ITESM
 //
+//This program is free software: you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation, either version 3 of the License, or
+//(at your option) any later version.
+//
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//
+//
+//Authors:
+//
+//ITESM representatives
+//Ing. Martha Sordia Salinas <msordia@itesm.mx>
+//Dr. Juan Arturo Nolazco Flores <jnolazco@itesm.mx>
+//Ing. Maria Isabel Cabrera Cancino <marisa.cabrera@tecvirtual.mx>
+//
+//
+//ITESM students (developers)
+//Eliezer Galvan <a01190876@itesm.mx>
+//Montserrat Lozano <a01088686@itesm.mx>
+//Adrian Rangel <a01190871@itesm.mx>
 
 #import "ActividadesViewController.h"
 #import "ListaImagenesTableViewController.h"
 #import "ListaVideosTableViewController.h"
+#import "ListaConsejosTableViewController.h"
 
 @interface ActividadesViewController ()
 {
 	NSMutableArray *dibujos;
 	NSMutableArray *videos;
+	NSMutableArray *consejos;
 }
 
 @end
@@ -23,15 +50,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	self.buttonsView.alpha = 0.8;
+	self.buttonsView.layer.cornerRadius = 10.0;
 	
 	//Cargar informacion de servicio web de acuerdo al boton seleccionado
 	if(self.source==0){			//Agua
+		self.navigationItem.title = @"Cuidado del Agua";
+		self.imageTheme.image = [UIImage imageNamed:@"fondo_agua.jpg"];
 		[self cargaDatosWeb:@"http://intranet.bluehats.mx/moviles/agua.php"];
 	}else if(self.source==1){	//Reciclaje
+		self.navigationItem.title = @"Reciclaje";
+		self.imageTheme.image = [UIImage imageNamed:@"fondo_reciclaje.jpg"];
 		[self cargaDatosWeb:@"http://intranet.bluehats.mx/moviles/reciclaje.php"];
 	}else if(self.source==2){	//Biodiversidad
+		self.navigationItem.title = @"Biodiversidad";
+		self.imageTheme.image = [UIImage imageNamed:@"fondo_biodiversidad.png"];
 		[self cargaDatosWeb:@"http://intranet.bluehats.mx/moviles/biodiversidad.php"];
 	}else if(self.source==3){	//Energias
+		self.navigationItem.title = @"Energías Renovables";
+		self.imageTheme.image = [UIImage imageNamed:@"fondo_renovables.png"];
 		[self cargaDatosWeb:@"http://intranet.bluehats.mx/moviles/energias-renovables.php"];
 	}else{
 		NSLog(@"menu source error");
@@ -118,26 +155,27 @@
 
 	dibujos = [[NSMutableArray alloc] init];
 	videos = [[NSMutableArray alloc] init];
+	consejos = [[NSMutableArray alloc] init];
 	
-	NSDictionary *obj = @{@"nombre":[[datos objectForKey:@"dibujos"] objectForKey:@"nombre"],@"url":[[datos objectForKey:@"dibujos"] objectForKey:@"url"]};
-	[dibujos addObject:obj];
+	//Fetch images
+	for(NSDictionary *i in [datos objectForKey:@"dibujos"]){
+		[dibujos addObject:i];
+	}
 	
-	obj = @{@"nombre":@"Video 1",@"url":[[datos objectForKey:@"videos"] objectForKey:@"1"]};
-	[videos addObject:obj];
+	//Fetch videos
+	for(NSDictionary *i in [datos objectForKey:@"videos"]){
+		[videos addObject:i];
+	}
 	
-	
-	//NSLog(@"%@",[[datos objectForKey:@"dibujos"] objectForKey:@"nombre"]);
-	//NSLog(@"%@",[[datos objectForKey:@"dibujos"] objectForKey:@"url"]);
-	
-	//NSLog(@"%@",[[datos objectForKey:@"videos"] objectForKey:@"1"]);
-	
-	
-	
-	
+	//Fetch audio
+	for(NSDictionary *i in [datos objectForKey:@"consejos"]){
+		[consejos addObject:i];
+	}
 	
 	//Resultados:
 	//NSLog(@"dibujos: %@",dibujos);
 	//NSLog(@"videos: %@",videos);
+	//NSLog(@"consejos: %@",consejos);
 	
 }
 
@@ -158,11 +196,15 @@
 	if([segue.identifier isEqualToString:@"goToVideos"]){
 		ListaVideosTableViewController *vc = [segue destinationViewController];
 		vc.videos = videos;
+		vc.source = self.source;
 	}else if([segue.identifier isEqualToString:@"goToDibujos"]){
 		ListaImagenesTableViewController *vc = [segue destinationViewController];
 		vc.imagenes = dibujos;
+		vc.source = self.source;
 	}else if([segue.identifier isEqualToString:@"goToConsejos"]){
-		
+		ListaConsejosTableViewController *vc = [segue destinationViewController];
+		vc.consejos = consejos;
+		vc.source = self.source;
 	}
 }
 

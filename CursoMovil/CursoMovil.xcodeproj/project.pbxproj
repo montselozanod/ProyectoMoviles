@@ -28,7 +28,18 @@
 		4587790118E65C3400172D6D /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4587790018E65C3400172D6D /* grass.png */; };
 		4587790318E65D1000172D6D /* sponsors.png in Resources */ = {isa = PBXBuildFile; fileRef = 4587790218E65D1000172D6D /* sponsors.png */; };
 		4587790518E6676A00172D6D /* sponsors_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4587790418E6676A00172D6D /* sponsors_icon.png */; };
+		459745B4191704AF007E57C5 /* mono_renovables.png in Resources */ = {isa = PBXBuildFile; fileRef = 459745B3191704AF007E57C5 /* mono_renovables.png */; };
+		459745B719170777007E57C5 /* fondo_renovables.png in Resources */ = {isa = PBXBuildFile; fileRef = 459745B619170777007E57C5 /* fondo_renovables.png */; };
+		459745BB19174154007E57C5 /* fondo_agua.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 459745B819174154007E57C5 /* fondo_agua.jpg */; };
+		459745BC19174154007E57C5 /* fondo_reciclaje.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 459745B919174154007E57C5 /* fondo_reciclaje.jpg */; };
+		459745BD19174154007E57C5 /* fondo_biodiversidad.png in Resources */ = {isa = PBXBuildFile; fileRef = 459745BA19174154007E57C5 /* fondo_biodiversidad.png */; };
+		45BE90ED19184C09003FD6A9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BE90EC19184C09003FD6A9 /* MediaPlayer.framework */; };
+		45BE90EF19184C68003FD6A9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BE90EE19184C68003FD6A9 /* AVFoundation.framework */; };
+		45BE90F419186525003FD6A9 /* back_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 45BE90F319186525003FD6A9 /* back_music.mp3 */; };
 		45D3C3D71905E75B00D75D37 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D3C3D61905E75B00D75D37 /* Social.framework */; };
+		45E3790A1915654A002F0DAD /* facebook30.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E379091915654A002F0DAD /* facebook30.png */; };
+		45E3790C1915663D002F0DAD /* twitter30.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E3790B1915663D002F0DAD /* twitter30.png */; };
+		45E3790E19156641002F0DAD /* save30.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E3790D19156641002F0DAD /* save30.png */; };
 		B012B71218E483B400CBC901 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B71118E483B400CBC901 /* Foundation.framework */; };
 		B012B71418E483B400CBC901 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B71318E483B400CBC901 /* CoreGraphics.framework */; };
 		B012B71618E483B400CBC901 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012B71518E483B400CBC901 /* UIKit.framework */; };
@@ -109,7 +120,18 @@
 		4587790018E65C3400172D6D /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
 		4587790218E65D1000172D6D /* sponsors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponsors.png; sourceTree = "<group>"; };
 		4587790418E6676A00172D6D /* sponsors_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponsors_icon.png; sourceTree = "<group>"; };
+		459745B3191704AF007E57C5 /* mono_renovables.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mono_renovables.png; sourceTree = "<group>"; };
+		459745B619170777007E57C5 /* fondo_renovables.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_renovables.png; sourceTree = "<group>"; };
+		459745B819174154007E57C5 /* fondo_agua.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo_agua.jpg; sourceTree = "<group>"; };
+		459745B919174154007E57C5 /* fondo_reciclaje.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo_reciclaje.jpg; sourceTree = "<group>"; };
+		459745BA19174154007E57C5 /* fondo_biodiversidad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo_biodiversidad.png; sourceTree = "<group>"; };
+		45BE90EC19184C09003FD6A9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		45BE90EE19184C68003FD6A9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45BE90F319186525003FD6A9 /* back_music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = back_music.mp3; sourceTree = "<group>"; };
 		45D3C3D61905E75B00D75D37 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		45E379091915654A002F0DAD /* facebook30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook30.png; sourceTree = "<group>"; };
+		45E3790B1915663D002F0DAD /* twitter30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter30.png; sourceTree = "<group>"; };
+		45E3790D19156641002F0DAD /* save30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save30.png; sourceTree = "<group>"; };
 		B012B70E18E483B400CBC901 /* CursoMovil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CursoMovil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B012B71118E483B400CBC901 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B012B71318E483B400CBC901 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,6 +176,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45BE90EF19184C68003FD6A9 /* AVFoundation.framework in Frameworks */,
+				45BE90ED19184C09003FD6A9 /* MediaPlayer.framework in Frameworks */,
 				45D3C3D71905E75B00D75D37 /* Social.framework in Frameworks */,
 				B012B71418E483B400CBC901 /* CoreGraphics.framework in Frameworks */,
 				B012B71818E483B400CBC901 /* CoreData.framework in Frameworks */,
@@ -257,6 +281,60 @@
 			name = Actividades;
 			sourceTree = "<group>";
 		};
+		459745B219170498007E57C5 /* Personajes */ = {
+			isa = PBXGroup;
+			children = (
+				459745B3191704AF007E57C5 /* mono_renovables.png */,
+			);
+			name = Personajes;
+			sourceTree = "<group>";
+		};
+		459745B519170756007E57C5 /* Fondos Temas */ = {
+			isa = PBXGroup;
+			children = (
+				459745B819174154007E57C5 /* fondo_agua.jpg */,
+				459745B919174154007E57C5 /* fondo_reciclaje.jpg */,
+				459745BA19174154007E57C5 /* fondo_biodiversidad.png */,
+				459745B619170777007E57C5 /* fondo_renovables.png */,
+			);
+			name = "Fondos Temas";
+			sourceTree = "<group>";
+		};
+		45BE90F01918648D003FD6A9 /* Musica Fondo */ = {
+			isa = PBXGroup;
+			children = (
+				45BE90F319186525003FD6A9 /* back_music.mp3 */,
+			);
+			name = "Musica Fondo";
+			sourceTree = "<group>";
+		};
+		45E379031915638A002F0DAD /* Trofeos y medallas */ = {
+			isa = PBXGroup;
+			children = (
+				458778F818E658FA00172D6D /* m-01.png */,
+				B012B75018E52DD400CBC901 /* m-09.png */,
+				B012B75118E52DD400CBC901 /* m-10.png */,
+				B012B75218E52DD400CBC901 /* m-11.png */,
+				B012B75318E52DD400CBC901 /* m-12.png */,
+				B012B75418E52DD400CBC901 /* m-13.png */,
+			);
+			name = "Trofeos y medallas";
+			sourceTree = "<group>";
+		};
+		45E37904191563B4002F0DAD /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				B012B76118E5352E00CBC901 /* m-07.png */,
+				B012B74A18E52DD400CBC901 /* m-02.png */,
+				B012B74B18E52DD400CBC901 /* m-03.png */,
+				B012B74C18E52DD400CBC901 /* m-04.png */,
+				B012B74D18E52DD400CBC901 /* m-05.png */,
+				B012B74E18E52DD400CBC901 /* m-06.png */,
+				B012B74F18E52DD400CBC901 /* m-08.png */,
+			);
+			name = Menus;
+			sourceTree = "<group>";
+		};
 		B012B70518E483B400CBC901 = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +357,8 @@
 		B012B71018E483B400CBC901 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45BE90EE19184C68003FD6A9 /* AVFoundation.framework */,
+				45BE90EC19184C09003FD6A9 /* MediaPlayer.framework */,
 				45D3C3D61905E75B00D75D37 /* Social.framework */,
 				B012B71118E483B400CBC901 /* Foundation.framework */,
 				B012B71318E483B400CBC901 /* CoreGraphics.framework */,
@@ -306,6 +386,7 @@
 				B012B72818E483B400CBC901 /* Images.xcassets */,
 				B012B76018E52DDE00CBC901 /* Imagenes */,
 				B07852BE18E628D10012CB76 /* pinturasImag */,
+				45BE90F01918648D003FD6A9 /* Musica Fondo */,
 				B012B71A18E483B400CBC901 /* Supporting Files */,
 			);
 			path = CursoMovil;
@@ -343,24 +424,18 @@
 		B012B76018E52DDE00CBC901 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				45E3790D19156641002F0DAD /* save30.png */,
+				45E3790B1915663D002F0DAD /* twitter30.png */,
+				45E379091915654A002F0DAD /* facebook30.png */,
 				4587790418E6676A00172D6D /* sponsors_icon.png */,
 				4587790218E65D1000172D6D /* sponsors.png */,
 				4587790018E65C3400172D6D /* grass.png */,
 				458778FE18E65BF100172D6D /* logo.png */,
 				458778FC18E65AF700172D6D /* fondo.png */,
-				458778F818E658FA00172D6D /* m-01.png */,
-				B012B76118E5352E00CBC901 /* m-07.png */,
-				B012B74A18E52DD400CBC901 /* m-02.png */,
-				B012B74B18E52DD400CBC901 /* m-03.png */,
-				B012B74C18E52DD400CBC901 /* m-04.png */,
-				B012B74D18E52DD400CBC901 /* m-05.png */,
-				B012B74E18E52DD400CBC901 /* m-06.png */,
-				B012B74F18E52DD400CBC901 /* m-08.png */,
-				B012B75018E52DD400CBC901 /* m-09.png */,
-				B012B75118E52DD400CBC901 /* m-10.png */,
-				B012B75218E52DD400CBC901 /* m-11.png */,
-				B012B75318E52DD400CBC901 /* m-12.png */,
-				B012B75418E52DD400CBC901 /* m-13.png */,
+				459745B519170756007E57C5 /* Fondos Temas */,
+				459745B219170498007E57C5 /* Personajes */,
+				45E37904191563B4002F0DAD /* Menus */,
+				45E379031915638A002F0DAD /* Trofeos y medallas */,
 			);
 			name = Imagenes;
 			sourceTree = "<group>";
@@ -456,28 +531,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459745BB19174154007E57C5 /* fondo_agua.jpg in Resources */,
 				4587790118E65C3400172D6D /* grass.png in Resources */,
+				45E3790E19156641002F0DAD /* save30.png in Resources */,
 				B012B75E18E52DD400CBC901 /* m-12.png in Resources */,
+				45BE90F419186525003FD6A9 /* back_music.mp3 in Resources */,
 				B012B71E18E483B400CBC901 /* InfoPlist.strings in Resources */,
 				458778FF18E65BF100172D6D /* logo.png in Resources */,
 				B012B75618E52DD400CBC901 /* m-03.png in Resources */,
 				B07852B118E5EC7B0012CB76 /* blue.png in Resources */,
 				B012B75A18E52DD400CBC901 /* m-08.png in Resources */,
 				458778F718E658E500172D6D /* white.png in Resources */,
+				45E3790A1915654A002F0DAD /* facebook30.png in Resources */,
 				4587790318E65D1000172D6D /* sponsors.png in Resources */,
+				459745BC19174154007E57C5 /* fondo_reciclaje.jpg in Resources */,
+				459745B4191704AF007E57C5 /* mono_renovables.png in Resources */,
 				B012B72918E483B400CBC901 /* Images.xcassets in Resources */,
 				B012B75C18E52DD400CBC901 /* m-10.png in Resources */,
 				B012B75918E52DD400CBC901 /* m-06.png in Resources */,
 				B012B74918E520FF00CBC901 /* Main.storyboard in Resources */,
 				B07852BD18E628C40012CB76 /* yellow.png in Resources */,
 				458778F918E658FA00172D6D /* m-01.png in Resources */,
+				459745BD19174154007E57C5 /* fondo_biodiversidad.png in Resources */,
 				B012B75B18E52DD400CBC901 /* m-09.png in Resources */,
 				B012B75518E52DD400CBC901 /* m-02.png in Resources */,
 				4587790518E6676A00172D6D /* sponsors_icon.png in Resources */,
 				B012B75718E52DD400CBC901 /* m-04.png in Resources */,
 				B07852B718E628B90012CB76 /* pink.png in Resources */,
 				B012B76218E5352E00CBC901 /* m-07.png in Resources */,
+				45E3790C1915663D002F0DAD /* twitter30.png in Resources */,
 				B012B75F18E52DD400CBC901 /* m-13.png in Resources */,
+				459745B719170777007E57C5 /* fondo_renovables.png in Resources */,
 				B07852B318E628A60012CB76 /* green.png in Resources */,
 				B012B75818E52DD400CBC901 /* m-05.png in Resources */,
 				458778FD18E65AF700172D6D /* fondo.png in Resources */,

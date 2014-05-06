@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Usuario" representedClassName="Usuario" syncable="YES">
-        <attribute name="medalla1" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="medalla2" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="medalla3" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="medalla4" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="medalla1" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="medalla2" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="medalla3" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="medalla4" optional="YES" attributeType="Integer 32" syncable="YES"/>
+        <attribute name="mod1act1" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod1act2" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod1act3" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod2act1" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod2act2" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod2act3" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod3act1" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod3act2" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod3act3" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod4act1" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod4act2" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="mod4act3" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
         <attribute name="puntos" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
-        <attribute name="trofeo" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="trofeo" optional="YES" attributeType="Integer 32" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="135"/>
+        <element name="Usuario" positionX="-63" positionY="-18" width="128" height="315"/>
     </elements>
 </model>

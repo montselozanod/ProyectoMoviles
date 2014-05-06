@@ -1,10 +1,35 @@
 //
-//  ManejoBD.m
-//  CursoMovil
+//APRENDIZAJE VERDE - CUIDANDO EL AMBIENTE
+//Mobile Development Course Project
 //
-//  Created by Eliézer Galván on 4/14/14.
-//  Copyright (c) 2014 ITESM. All rights reserved.
+//Copyright (C) 2014 - ITESM
 //
+//This program is free software: you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation, either version 3 of the License, or
+//(at your option) any later version.
+//
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with this program.  If not, see <http://www.gnu.org/licenses/>.
+//
+//
+//Authors:
+//
+//ITESM representatives
+//Ing. Martha Sordia Salinas <msordia@itesm.mx>
+//Dr. Juan Arturo Nolazco Flores <jnolazco@itesm.mx>
+//Ing. Maria Isabel Cabrera Cancino <marisa.cabrera@tecvirtual.mx>
+//
+//
+//ITESM students (developers)
+//Eliezer Galvan <a01190876@itesm.mx>
+//Montserrat Lozano <a01088686@itesm.mx>
+//Adrian Rangel <a01190871@itesm.mx>
 
 #import "ManejoBD.h"
 #import "Usuario.h"
@@ -151,11 +176,25 @@
 		
 		//Caracteristicas iniciales del usuario
 		nuevoUsuario.puntos = [NSNumber numberWithInt:0];
-		nuevoUsuario.medalla1 = NO;
-		nuevoUsuario.medalla2 = NO;
-		nuevoUsuario.medalla3 = NO;
-		nuevoUsuario.medalla4 = NO;
-		nuevoUsuario.trofeo = NO;
+		
+		nuevoUsuario.medalla1 = [NSNumber numberWithInt:0];
+		nuevoUsuario.medalla2 = [NSNumber numberWithInt:0];
+		nuevoUsuario.medalla3 = [NSNumber numberWithInt:0];
+		nuevoUsuario.medalla4 = [NSNumber numberWithInt:0];
+		nuevoUsuario.trofeo = [NSNumber numberWithInt:0];
+		
+		nuevoUsuario.mod1act1 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod1act2 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod1act3 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod2act1 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod2act2 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod2act3 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod3act1 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod3act2 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod3act3 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod4act1 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod4act2 = [NSNumber numberWithInt:0];
+		nuevoUsuario.mod4act3 = [NSNumber numberWithInt:0];
 		
 		[self saveContext];
 		
@@ -182,7 +221,7 @@
     }
 }
 
--(BOOL)hasMedalla1Won
+-(NSNumber *)hasMedalla1Won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -192,14 +231,14 @@
     NSArray *datos = [context executeFetchRequest:request error:&error];
     
     if ([datos count] == 0) {
-       	return NO;
+       	return 0;
     } else {
         Usuario *u = datos[0];
-        return (BOOL)u.medalla1;
+        return u.medalla1;
     }
 }
 
--(BOOL)hasMedalla2Won
+-(NSNumber *)hasMedalla2Won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -212,11 +251,11 @@
        	return NO;
     } else {
         Usuario *u = datos[0];
-        return (BOOL)u.medalla2;
+        return u.medalla2;
     }
 }
 
--(BOOL)hasMedalla3Won
+-(NSNumber *)hasMedalla3Won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -229,11 +268,11 @@
        	return NO;
     } else {
         Usuario *u = datos[0];
-        return (BOOL)u.medalla3;
+        return u.medalla3;
     }
 }
 
--(BOOL)hasMedalla4Won
+-(NSNumber *)hasMedalla4Won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -246,11 +285,11 @@
        	return NO;
     } else {
         Usuario *u = datos[0];
-        return (BOOL)u.medalla4;
+        return u.medalla4;
     }
 }
 
--(BOOL)hasTrofeoWon
+-(NSNumber *)hasTrofeoWon
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -263,7 +302,7 @@
        	return NO;
     } else {
         Usuario *u = datos[0];
-        return (BOOL)u.trofeo;
+        return u.trofeo;
     }
 }
 
@@ -287,7 +326,7 @@
 	[self saveContext];
 }
 
--(void)setMedalla1Won:(BOOL)won
+-(void)setMedalla1Won:(NSNumber *)won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -300,13 +339,13 @@
        	NSLog(@"error retreiving medalla1 for modification");
     } else {
         Usuario *u = datos[0];
-       	u.medalla1 = [NSNumber numberWithBool:won];
+       	u.medalla1 = won;
     }
 	
 	[self saveContext];
 }
 
--(void)setMedalla2Won:(BOOL)won
+-(void)setMedalla2Won:(NSNumber *)won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -319,13 +358,13 @@
        	NSLog(@"error retreiving medalla2 for modification");
     } else {
         Usuario *u = datos[0];
-       	u.medalla2 = [NSNumber numberWithBool:won];
+       	u.medalla2 = won;
     }
 	
 	[self saveContext];
 }
 
--(void)setMedalla3Won:(BOOL)won
+-(void)setMedalla3Won:(NSNumber *)won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -338,13 +377,13 @@
        	NSLog(@"error retreiving medalla3 for modification");
     } else {
         Usuario *u = datos[0];
-       	u.medalla3 = [NSNumber numberWithBool:won];
+       	u.medalla3 = won;
     }
 	
 	[self saveContext];
 }
 
--(void)setMedalla4Won:(BOOL)won
+-(void)setMedalla4Won:(NSNumber *)won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -357,13 +396,13 @@
        	NSLog(@"error retreiving medalla4 for modification");
     } else {
         Usuario *u = datos[0];
-       	u.medalla4 = [NSNumber numberWithBool:won];
+       	u.medalla4 = won;
     }
 	
 	[self saveContext];
 }
 
--(void)setTrofeoWon:(BOOL)won
+-(void)setTrofeoWon:(NSNumber *)won
 {
 	NSManagedObjectContext *context = self.managedObjectContext;
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
@@ -376,7 +415,441 @@
        	NSLog(@"error retreiving trofeo for modification");
     } else {
         Usuario *u = datos[0];
-       	u.trofeo = [NSNumber numberWithBool:won];
+       	u.trofeo = won;
+    }
+	
+	[self saveContext];
+}
+
+//Control puntos
+
+-(NSNumber *)hasMod1Act1
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod1act1;
+    }
+}
+
+-(NSNumber *)hasMod1Act2
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod1act2;
+    }
+}
+
+-(NSNumber *)hasMod1Act3
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod1act3;
+    }
+}
+
+-(NSNumber *)hasMod2Act1
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod2act1;
+    }
+}
+
+-(NSNumber *)hasMod2Act2
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod2act2;
+    }
+}
+
+-(NSNumber *)hasMod2Act3
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod2act3;
+    }
+}
+
+-(NSNumber *)hasMod3Act1
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod3act1;
+    }
+}
+
+-(NSNumber *)hasMod3Act2
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod3act2;
+    }
+}
+
+-(NSNumber *)hasMod3Act3
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod3act3;
+    }
+}
+
+-(NSNumber *)hasMod4Act1
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod4act1;
+    }
+}
+
+-(NSNumber *)hasMod4Act2
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod4act2;
+    }
+}
+
+-(NSNumber *)hasMod4Act3
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	return NO;
+    } else {
+        Usuario *u = datos[0];
+        return u.mod4act3;
+    }
+}
+
+-(void)setMod1Act1:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod1act1 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod1Act2:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod1act2 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod1Act3:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod1act3 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod2Act1:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod2act1 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod2Act2:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod2act2 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod2Act3:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod2act3 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod3Act1:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod3act1 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod3Act2:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod3act2 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod3Act3:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod3act3 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod4Act1:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod4act1 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod4Act2:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod4act2 = won;
+    }
+	
+	[self saveContext];
+}
+
+-(void)setMod4Act3:(NSNumber *)won
+{
+	NSManagedObjectContext *context = self.managedObjectContext;
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Usuario" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    NSError *error;
+    NSArray *datos = [context executeFetchRequest:request error:&error];
+    
+    if ([datos count] == 0) {
+       	NSLog(@"error retreiving point control for modification");
+    } else {
+        Usuario *u = datos[0];
+       	u.mod4act3 = won;
     }
 	
 	[self saveContext];
