@@ -71,10 +71,13 @@
 			[self.spinner stopAnimating];
 		});
 	});
-	
-	ManejoBD *bd = [ManejoBD instancia];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    ManejoBD *bd = [ManejoBD instancia];
 	[bd initUsuario];
-	
+
 	//Point test for act 3
 	if(self.source==0){//agua
 		if([bd hasMod4Act3]==[NSNumber numberWithInt:0]){

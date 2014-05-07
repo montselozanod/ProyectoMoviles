@@ -56,10 +56,13 @@
     NSString* embedHTML = [NSString stringWithFormat:@"<html><body style='margin:0px;padding:0px;'><script type='text/javascript' src='http://www.youtube.com/iframe_api'></script><script type='text/javascript'>\function onYouTubeIframeAPIReady()\{ytplayer=new YT.Player('playerId',{events:{onReady:onPlayerReady}})}\function onPlayerReady(a)\{ \a.target.playVideo(); }</script><iframe id='playerId' type='text/html' width='%f' height='%f' src='http://www.youtube.com/embed/%@?enablejsapi=1&rel=0&playsinline=1&autoplay=1' frameborder='0'></body></html>",self.webView.frame.size.width,self.webView.frame.size.height,self.url];
 						   
 	[self.webView loadHTMLString:embedHTML baseURL:[[NSBundle mainBundle] resourceURL]];
-	
-	ManejoBD *bd = [ManejoBD instancia];
+}
+
+-(void)viewDidDisappear:(BOOL)animated
+{
+    ManejoBD *bd = [ManejoBD instancia];
 	[bd initUsuario];
-	
+
 	//Point test for act 1
 	if(self.source==0){//agua
 		if([bd hasMod4Act1]==[NSNumber numberWithInt:0]){
@@ -86,10 +89,7 @@
 			[[[UIAlertView alloc] initWithTitle:@"Felicidades!" message:@"Has ganado 100 puntos!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
 		}
 	}
-}
-
--(void)viewDidDisappear:(BOOL)animated
-{
+    
 	//Turn on background music
 	AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
 	[appDelegate.audioPlayer play];
