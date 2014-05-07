@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A27D157191A946D005A18CE /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A27D156191A946D005A18CE /* fondo.jpg */; };
 		4504C9EC18FC7294005199DA /* ListaImagenesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504C9EB18FC7294005199DA /* ListaImagenesTableViewController.m */; };
 		4504C9EF18FC7A5E005199DA /* Modelo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4504C9ED18FC7A5E005199DA /* Modelo.xcdatamodeld */; };
 		4504C9F218FC7BBA005199DA /* Usuario.m in Sources */ = {isa = PBXBuildFile; fileRef = 4504C9F118FC7BBA005199DA /* Usuario.m */; };
@@ -23,7 +24,6 @@
 		458778F718E658E500172D6D /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 458778F618E658E500172D6D /* white.png */; };
 		458778F918E658FA00172D6D /* m-01.png in Resources */ = {isa = PBXBuildFile; fileRef = 458778F818E658FA00172D6D /* m-01.png */; };
 		458778FB18E6593D00172D6D /* canvas.png in Resources */ = {isa = PBXBuildFile; fileRef = 458778FA18E6593D00172D6D /* canvas.png */; };
-		458778FD18E65AF700172D6D /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = 458778FC18E65AF700172D6D /* fondo.png */; };
 		458778FF18E65BF100172D6D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 458778FE18E65BF100172D6D /* logo.png */; };
 		4587790118E65C3400172D6D /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 4587790018E65C3400172D6D /* grass.png */; };
 		4587790318E65D1000172D6D /* sponsors.png in Resources */ = {isa = PBXBuildFile; fileRef = 4587790218E65D1000172D6D /* sponsors.png */; };
@@ -87,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A27D156191A946D005A18CE /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpg; sourceTree = "<group>"; };
 		4504C9EA18FC7294005199DA /* ListaImagenesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaImagenesTableViewController.h; sourceTree = "<group>"; };
 		4504C9EB18FC7294005199DA /* ListaImagenesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaImagenesTableViewController.m; sourceTree = "<group>"; };
 		4504C9EE18FC7A5E005199DA /* Modelo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modelo.xcdatamodel; sourceTree = "<group>"; };
@@ -115,7 +116,6 @@
 		458778F618E658E500172D6D /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		458778F818E658FA00172D6D /* m-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-01.png"; sourceTree = "<group>"; };
 		458778FA18E6593D00172D6D /* canvas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canvas.png; sourceTree = "<group>"; };
-		458778FC18E65AF700172D6D /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
 		458778FE18E65BF100172D6D /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		4587790018E65C3400172D6D /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
 		4587790218E65D1000172D6D /* sponsors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sponsors.png; sourceTree = "<group>"; };
@@ -424,6 +424,7 @@
 		B012B76018E52DDE00CBC901 /* Imagenes */ = {
 			isa = PBXGroup;
 			children = (
+				3A27D156191A946D005A18CE /* fondo.jpg */,
 				45E3790D19156641002F0DAD /* save30.png */,
 				45E3790B1915663D002F0DAD /* twitter30.png */,
 				45E379091915654A002F0DAD /* facebook30.png */,
@@ -431,7 +432,6 @@
 				4587790218E65D1000172D6D /* sponsors.png */,
 				4587790018E65C3400172D6D /* grass.png */,
 				458778FE18E65BF100172D6D /* logo.png */,
-				458778FC18E65AF700172D6D /* fondo.png */,
 				459745B519170756007E57C5 /* Fondos Temas */,
 				459745B219170498007E57C5 /* Personajes */,
 				45E37904191563B4002F0DAD /* Menus */,
@@ -555,6 +555,7 @@
 				459745BD19174154007E57C5 /* fondo_biodiversidad.png in Resources */,
 				B012B75B18E52DD400CBC901 /* m-09.png in Resources */,
 				B012B75518E52DD400CBC901 /* m-02.png in Resources */,
+				3A27D157191A946D005A18CE /* fondo.jpg in Resources */,
 				4587790518E6676A00172D6D /* sponsors_icon.png in Resources */,
 				B012B75718E52DD400CBC901 /* m-04.png in Resources */,
 				B07852B718E628B90012CB76 /* pink.png in Resources */,
@@ -564,7 +565,6 @@
 				459745B719170777007E57C5 /* fondo_renovables.png in Resources */,
 				B07852B318E628A60012CB76 /* green.png in Resources */,
 				B012B75818E52DD400CBC901 /* m-05.png in Resources */,
-				458778FD18E65AF700172D6D /* fondo.png in Resources */,
 				B07852BB18E628C40012CB76 /* purple.png in Resources */,
 				B07852BC18E628C40012CB76 /* red.png in Resources */,
 				B012B75D18E52DD400CBC901 /* m-11.png in Resources */,
