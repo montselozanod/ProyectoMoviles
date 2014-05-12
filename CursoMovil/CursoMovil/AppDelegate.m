@@ -47,6 +47,7 @@
 	NSString *path = [[NSBundle mainBundle] pathForResource:@"back_music" ofType:@"mp3"];
 	self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:nil];
 	self.audioPlayer.numberOfLoops = -1;
+    self.audioPlayer.volume = 0.7;
 	[self.audioPlayer play];
    
     return YES;
