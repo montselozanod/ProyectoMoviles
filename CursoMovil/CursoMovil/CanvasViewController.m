@@ -56,7 +56,7 @@
 	red = 0.0/255.0;
     green = 0.0/255.0;
     blue = 0.0/255.0;
-	brush = 10.0;
+	brush = 15.0;
 	
 	//Start spinner
 	[self.spinner setHidesWhenStopped:YES];
